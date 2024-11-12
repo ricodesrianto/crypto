@@ -1,0 +1,366 @@
+<head>
+<style>
+body{zoom:143%;background-color:#353537;color:#6db432;}
+.tradingview-widget-container{position: absolute;font-size:30px;text-align: center;font-weight:700;font-family: Trebuchet MS,roboto,ubuntu,sans-serif;}
+.form-control{margin:0 0 0 50px;width:200px;height:35px;}
+.TPCL{margin-left:-100px;}
+
+.style1{position:absolute;margin-top:10px;overflow:hidden;}
+.style2{position:absolute;margin-top:10px;margin-left:400px;}
+.style3{position:absolute;margin-top:10px;margin-left:800px;}
+.style4{position:absolute;margin-top:10px;margin-left:1200px;}
+.style5{position:absolute;margin-top:10px;margin-left:1600px;}
+.style6{position:absolute;margin-top:10px;margin-left:2000px;}
+.style7{position:absolute;margin-top:10px;margin-left:2400px;}
+.style8{position:absolute;margin-top:10px;margin-left:2800px;}
+
+.style9{position:absolute;margin-top:350px;margin-left:0px;}
+.style10{position:absolute;margin-top:350px;margin-left:400px;}
+.style11{position:absolute;margin-top:350px;margin-left:800px;}
+.style12{position:absolute;margin-top:350px;margin-left:1200px}
+.style13{position:absolute;margin-top:350px;margin-left:1600px}
+.style14{position:absolute;margin-top:350px;margin-left:2000px}
+.style15{position:absolute;margin-top:350px;margin-left:2400px}
+.style16{position:absolute;margin-top:350px;margin-left:2800px}
+
+.style17{position:absolute;margin-top:700px;margin-left:0px;}
+.style18{position:absolute;margin-top:700px;margin-left:400px;}
+.style19{position:absolute;margin-top:700px;margin-left:800px;}
+.style20{position:absolute;margin-top:700px;margin-left:1200px}
+.style21{position:absolute;margin-top:700px;margin-left:1600px}
+.style22{position:absolute;margin-top:700px;margin-left:2000px}
+.style23{position:absolute;margin-top:700px;margin-left:2400px}
+.style24{position:absolute;margin-top:700px;margin-left:2800px}
+
+.style25{position:absolute;margin-top:1050px;margin-left:0px;}
+.style26{position:absolute;margin-top:1050px;margin-left:400px;}
+.style27{position:absolute;margin-top:1050px;margin-left:800px;}
+.style28{position:absolute;margin-top:1050px;margin-left:1200px}
+.style29{position:absolute;margin-top:1050px;margin-left:1600px}
+.style30{position:absolute;margin-top:1050px;margin-left:2000px}
+.style31{position:absolute;margin-top:1050px;margin-left:2400px}
+.style32{position:absolute;margin-top:1050px;margin-left:2800px}
+
+#textContainer{position:fixed;margin-top:1400px;margin-left:0px;color:white;}
+
+</style>
+</head>
+	  
+<body>
+<div class="tradingview-widget-container">
+<script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+
+<script type="text/javascript">
+var symbolInterval ="D";
+var symbolTheme ="dark";
+var symbolValue1 = "BINANCE:BTCUSDT";  			var symbolText1 = "BTC";
+var symbolValue2 = "BINANCE:ETHUSDT";  			var symbolText2 = "ETH";
+var symbolValue3 = "BINANCE:SOLUSDT";  			var symbolText3 = "SOL";
+var symbolValue4 = "BINANCE:ADAUSDT";  			var symbolText4 = "ADA";
+var symbolValue5 = "BINANCE:POLUSDT";  			var symbolText5 = "POL MATIC";
+var symbolValue6 = "BINANCE:BNBUSDT";  			var symbolText6 = "BNB";
+var symbolValue7 = "KUCOIN:ONDOUSDT";  			var symbolText7 = "ONDO";
+var symbolValue8 = "BINANCE:GRTUSDT";  			var symbolText8 = "GRT";
+
+var symbolValue9 = "BINANCE:ARKMUSDT";  		var symbolText9 = "ARKM";
+var symbolValue10 = "BINANCE:NEARUSDT";  		var symbolText10 = "NEAR";
+var symbolValue11 = "BINANCE:FTMUSDT";  		var symbolText11 = "FTM";
+var symbolValue12 = "BINANCE:AVAXUSDT";  		var symbolText12 = "AVAX";
+var symbolValue13 = "BINANCE:INJUSDT";  		var symbolText13 = "INJ";
+var symbolValue14 = "BINANCE:ARBUSDT";  		var symbolText14 = "ARB";
+var symbolValue15 = "BINANCE:ZILUSDT";  		var symbolText15 = "ZIL";
+var symbolValue16 = "BINANCE:ATOMUSDT";			var symbolText16 = "ATOM";
+
+var symbolValue17 = "BINANCE:AEVOUSDT";			var symbolText17 = "AEVO";
+var symbolValue18 = "BINANCE:QTUMUSDT";			var symbolText18 = "QTUM";
+var symbolValue19 = "BINANCE:OPUSDT";			var symbolText19 = "OP";
+var symbolValue20 = "BINANCE:ALTUSDT";			var symbolText20 = "ALTLAYER";
+var symbolValue21 = "BINANCE:MANTAUSDT";		var symbolText21 = "MANTA";
+var symbolValue22 = "BINANCE:XRPUSDT";			var symbolText22 = "XRP";
+var symbolValue23 = "BINANCE:ALGOUSDT";			var symbolText23 = "ALGO";
+var symbolValue24 = "BINANCE:QNTUSDT";			var symbolText24 = "QNT";
+
+var symbolValue25 = "BINANCE:CFXUSDT";			var symbolText25 = "CFX";
+var symbolValue26 = "BINANCE:UNIUSDT";			var symbolText26 = "UNI";
+var symbolValue27 = "BINANCE:VANRYUSDT";		var symbolText27 = "VANRY";
+var symbolValue28 = "KUCOIN:TOKENUSDT";			var symbolText28 = "TOKEN";
+var symbolValue29 = "BINANCE:ENAUSDT";			var symbolText29 = "ENA";
+var symbolValue30 = "BINANCE:HBARUSDT";			var symbolText30 = "HBAR";
+var symbolValue31 = "KUCOIN:MNTUSDT";			var symbolText31 = "MNT";
+var symbolValue32 = "BITGET:BGBUSDT";			var symbolText32 = "BGB";
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    var resultText = "Chart : " + symbolInterval;
+    var textContainer = document.getElementById("textContainer");
+
+    if (textContainer) {
+        textContainer.textContent = resultText;
+    }
+});
+</script>
+
+
+<div style="zoom:100%;">
+<span class="style1"><span id="symbolText1"></span>
+<script type="text/javascript">
+  document.getElementById("symbolText1").innerHTML = symbolText1;
+  new TradingView.widget(
+    {"width": 400,"height": 300,"symbol": symbolValue1,"interval":symbolInterval,"theme": symbolTheme,"hide_top_toolbar": true,"hide_legend": true,}
+  );
+</script></span>
+
+
+<span class="style2"><span id="symbolText2"></span>
+<script type="text/javascript">
+  document.getElementById("symbolText2").innerHTML = symbolText2;
+  new TradingView.widget(
+    {"width": 400,"height": 300,"symbol": symbolValue2,"interval": symbolInterval,"theme": symbolTheme,"hide_top_toolbar": true,"hide_legend": true,}
+  );
+</script></span>
+
+
+<span class="style3"><span id="symbolText3"></span>
+<script type="text/javascript">
+  document.getElementById("symbolText3").innerHTML = symbolText3;
+  new TradingView.widget(
+    {"width": 400,"height": 300,"symbol": symbolValue3,"interval": symbolInterval,"theme": symbolTheme,"hide_top_toolbar": true,"hide_legend": true,}
+  );
+</script></span>
+
+<span class="style4"><span id="symbolText4"></span>
+<script type="text/javascript">
+  document.getElementById("symbolText4").innerHTML = symbolText4;
+  new TradingView.widget(
+    {"width": 400,"height": 300,"symbol": symbolValue4,"interval": symbolInterval,"theme": symbolTheme,"hide_top_toolbar": true,"hide_legend": true,}
+  );
+</script></span>
+ 
+<span class="style5"><span id="symbolText5"></span>
+<script type="text/javascript">
+  document.getElementById("symbolText5").innerHTML = symbolText5;
+  new TradingView.widget(
+    {"width": 400,"height": 300,"symbol": symbolValue5,"interval": symbolInterval,"theme": symbolTheme,"hide_top_toolbar": true,"hide_legend": true,}
+  );
+</script></span>
+ 
+<span class="style6"><span id="symbolText6"></span>
+<script type="text/javascript">
+  document.getElementById("symbolText6").innerHTML = symbolText6;
+  new TradingView.widget(
+    {"width": 400,"height": 300,"symbol": symbolValue6,"interval": symbolInterval,"theme": symbolTheme,"hide_top_toolbar": true,"hide_legend": true,}
+  );
+</script></span>
+ 
+<span class="style7"><span id="symbolText7"></span>
+<script type="text/javascript">
+  document.getElementById("symbolText7").innerHTML = symbolText7;
+  new TradingView.widget(
+    {"width": 400,"height": 300,"symbol": symbolValue7,"interval": symbolInterval,"theme": symbolTheme,"hide_top_toolbar": true,"hide_legend": true,}
+  );
+</script></span>
+ 
+<span class="style8"><span id="symbolText8"></span>
+<script type="text/javascript">
+  document.getElementById("symbolText8").innerHTML = symbolText8;
+  new TradingView.widget(
+    {"width": 400,"height": 300,"symbol": symbolValue8,"interval": symbolInterval,"theme": symbolTheme,"hide_top_toolbar": true,"hide_legend": true,}
+  );
+</script></span>
+ 
+<span class="style9"><span id="symbolText9"></span>
+<script type="text/javascript">
+  document.getElementById("symbolText9").innerHTML = symbolText9;
+  new TradingView.widget(
+    {"width": 400,"height": 300,"symbol": symbolValue9,"interval": symbolInterval,"theme": symbolTheme,"hide_top_toolbar": true,"hide_legend": true,}
+  );
+</script></span>
+ 
+<span class="style10"><span id="symbolText10"></span>
+<script type="text/javascript">
+  document.getElementById("symbolText10").innerHTML = symbolText10;
+  new TradingView.widget(
+    {"width": 400,"height": 300,"symbol": symbolValue10,"interval": symbolInterval,"theme": symbolTheme,"hide_top_toolbar": true,"hide_legend": true,}
+  );
+</script></span>
+ 
+<span class="style11"><span id="symbolText11"></span>
+<script type="text/javascript">
+  document.getElementById("symbolText11").innerHTML = symbolText11;
+  new TradingView.widget(
+    {"width": 400,"height": 300,"symbol": symbolValue11,"interval": symbolInterval,"theme": symbolTheme,"hide_top_toolbar": true,"hide_legend": true,}
+  );
+</script></span>
+ 
+<span class="style12"><span id="symbolText12"></span>
+<script type="text/javascript">
+  document.getElementById("symbolText12").innerHTML = symbolText12;
+  new TradingView.widget(
+    {"width": 400,"height": 300,"symbol": symbolValue12,"interval": symbolInterval,"theme": symbolTheme,"hide_top_toolbar": true,"hide_legend": true,}
+  );
+</script></span>
+ 
+<span class="style13"><span id="symbolText13"></span>
+<script type="text/javascript">
+  document.getElementById("symbolText13").innerHTML = symbolText13;
+  new TradingView.widget(
+    {"width": 400,"height": 300,"symbol": symbolValue13,"interval": symbolInterval,"theme": symbolTheme,"hide_top_toolbar": true,"hide_legend": true,}
+  );
+</script></span>
+ 
+<span class="style14"><span id="symbolText14"></span>
+<script type="text/javascript">
+  document.getElementById("symbolText14").innerHTML = symbolText14;
+  new TradingView.widget(
+    {"width": 400,"height": 300,"symbol": symbolValue14,"interval": symbolInterval,"theme": symbolTheme,"hide_top_toolbar": true,"hide_legend": true,}
+  );
+</script></span>
+ 
+<span class="style15"><span id="symbolText15"></span>
+<script type="text/javascript">
+  document.getElementById("symbolText15").innerHTML = symbolText15;
+  new TradingView.widget(
+    {"width": 400,"height": 300,"symbol": symbolValue15,"interval": symbolInterval,"theme": symbolTheme,"hide_top_toolbar": true,"hide_legend": true,}
+  );
+</script></span>
+ 
+<span class="style16"><span id="symbolText16"></span>
+<script type="text/javascript">
+  document.getElementById("symbolText16").innerHTML = symbolText16;
+  new TradingView.widget(
+    {"width": 400,"height": 300,"symbol": symbolValue16,"interval": symbolInterval,"theme": symbolTheme,"hide_top_toolbar": true,"hide_legend": true,}
+  );
+</script></span>
+ 
+<span class="style17"><span id="symbolText17"></span>
+<script type="text/javascript">
+  document.getElementById("symbolText17").innerHTML = symbolText17;
+  new TradingView.widget(
+    {"width": 400,"height": 300,"symbol": symbolValue17,"interval": symbolInterval,"theme": symbolTheme,"hide_top_toolbar": true,"hide_legend": true,}
+  );
+</script></span>
+ 
+<span class="style18"><span id="symbolText18"></span>
+<script type="text/javascript">
+  document.getElementById("symbolText18").innerHTML = symbolText18;
+  new TradingView.widget(
+    {"width": 400,"height": 300,"symbol": symbolValue18,"interval": symbolInterval,"theme": symbolTheme,"hide_top_toolbar": true,"hide_legend": true,}
+  );
+</script></span>
+ 
+<span class="style19"><span id="symbolText19"></span>
+<script type="text/javascript">
+  document.getElementById("symbolText19").innerHTML = symbolText19;
+  new TradingView.widget(
+    {"width": 400,"height": 300,"symbol": symbolValue19,"interval": symbolInterval,"theme": symbolTheme,"hide_top_toolbar": true,"hide_legend": true,}
+  );
+</script></span>
+ 
+<span class="style20"><span id="symbolText20"></span>
+<script type="text/javascript">
+  document.getElementById("symbolText20").innerHTML = symbolText20;
+  new TradingView.widget(
+    {"width": 400,"height": 300,"symbol": symbolValue20,"interval": symbolInterval,"theme": symbolTheme,"hide_top_toolbar": true,"hide_legend": true,}
+  );
+</script></span>
+ 
+<span class="style21"><span id="symbolText21"></span>
+<script type="text/javascript">
+  document.getElementById("symbolText21").innerHTML = symbolText21;
+  new TradingView.widget(
+    {"width": 400,"height": 300,"symbol": symbolValue21,"interval": symbolInterval,"theme": symbolTheme,"hide_top_toolbar": true,"hide_legend": true,}
+  );
+</script></span>
+ 
+<span class="style22"><span id="symbolText22"></span>
+<script type="text/javascript">
+  document.getElementById("symbolText22").innerHTML = symbolText22;
+  new TradingView.widget(
+    {"width": 400,"height": 300,"symbol": symbolValue22,"interval": symbolInterval,"theme": symbolTheme,"hide_top_toolbar": true,"hide_legend": true,}
+  );
+</script></span>
+ 
+<span class="style23"><span id="symbolText23"></span>
+<script type="text/javascript">
+  document.getElementById("symbolText23").innerHTML = symbolText23;
+  new TradingView.widget(
+    {"width": 400,"height": 300,"symbol": symbolValue23,"interval": symbolInterval,"theme": symbolTheme,"hide_top_toolbar": true,"hide_legend": true,}
+  );
+</script></span>
+ 
+<span class="style24"><span id="symbolText24"></span>
+<script type="text/javascript">
+  document.getElementById("symbolText24").innerHTML = symbolText24;
+  new TradingView.widget(
+    {"width": 400,"height": 300,"symbol": symbolValue24,"interval": symbolInterval,"theme": symbolTheme,"hide_top_toolbar": true,"hide_legend": true,}
+  );
+</script></span>
+ 
+<span class="style25"><span id="symbolText25"></span>
+<script type="text/javascript">
+  document.getElementById("symbolText25").innerHTML = symbolText25;
+  new TradingView.widget(
+    {"width": 400,"height": 300,"symbol": symbolValue25,"interval": symbolInterval,"theme": symbolTheme,"hide_top_toolbar": true,"hide_legend": true,}
+  );
+</script></span>
+ 
+<span class="style26"><span id="symbolText26"></span>
+<script type="text/javascript">
+  document.getElementById("symbolText26").innerHTML = symbolText26;
+  new TradingView.widget(
+    {"width": 400,"height": 300,"symbol": symbolValue26,"interval": symbolInterval,"theme": symbolTheme,"hide_top_toolbar": true,"hide_legend": true,}
+  );
+</script></span>
+ 
+<span class="style27"><span id="symbolText27"></span>
+<script type="text/javascript">
+  document.getElementById("symbolText27").innerHTML = symbolText27;
+  new TradingView.widget(
+    {"width": 400,"height": 300,"symbol": symbolValue27,"interval": symbolInterval,"theme": symbolTheme,"hide_top_toolbar": true,"hide_legend": true,}
+  );
+</script></span>
+ 
+<span class="style28"><span id="symbolText28"></span>
+<script type="text/javascript">
+  document.getElementById("symbolText28").innerHTML = symbolText28;
+  new TradingView.widget(
+    {"width": 400,"height": 300,"symbol": symbolValue28,"interval": symbolInterval,"theme": symbolTheme,"hide_top_toolbar": true,"hide_legend": true,}
+  );
+</script></span>
+ 
+<span class="style29"><span id="symbolText29"></span>
+<script type="text/javascript">
+  document.getElementById("symbolText29").innerHTML = symbolText29;
+  new TradingView.widget(
+    {"width": 400,"height": 300,"symbol": symbolValue29,"interval": symbolInterval,"theme": symbolTheme,"hide_top_toolbar": true,"hide_legend": true,}
+  );
+</script></span>
+ 
+<span class="style30"><span id="symbolText30"></span>
+<script type="text/javascript">
+  document.getElementById("symbolText30").innerHTML = symbolText30;
+  new TradingView.widget(
+    {"width": 400,"height": 300,"symbol": symbolValue30,"interval": symbolInterval,"theme": symbolTheme,"hide_top_toolbar": true,"hide_legend": true,}
+  );
+</script></span>
+ 
+<span class="style31"><span id="symbolText31"></span>
+<script type="text/javascript">
+  document.getElementById("symbolText31").innerHTML = symbolText31;
+  new TradingView.widget(
+    {"width": 400,"height": 300,"symbol": symbolValue31,"interval": symbolInterval,"theme": symbolTheme,"hide_top_toolbar": true,"hide_legend": true,}
+  );
+</script></span>
+ 
+<span class="style32"><span id="symbolText32"></span>
+<script type="text/javascript">
+  document.getElementById("symbolText32").innerHTML = symbolText32;
+  new TradingView.widget(
+    {"width": 400,"height": 300,"symbol": symbolValue32,"interval": symbolInterval,"theme": symbolTheme,"hide_top_toolbar": true,"hide_legend": true,}
+  );
+</script></span>
+</div>
+<div id="textContainer"></div>
+</div>
+
+</body>
